@@ -11,13 +11,12 @@ document.getElementById("join").addEventListener("click",function(){
     text.style.padding = "2px";
     text.style.borderRadius = "5px";
     text.style.backgroundColor = "rgba(88, 243, 135, 1)";
-    fetch("http://localhost:3000/join", {
+    fetch("https://waitlist-backend-h04k.onrender.com", {  // ✅ This works live
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-        })
-        .then(res => res.json())
-        .then(data => {
-        console.log("Server says:", data.message);
-    });
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email })
+    })
+
 });
