@@ -11,7 +11,7 @@ document.getElementById("join").addEventListener("click",function(){
     text.style.padding = "2px";
     text.style.borderRadius = "5px";
     text.style.backgroundColor = "rgba(88, 243, 135, 1)";
-    fetch("https://waitlist-backend-h04k.onrender.com", {  // ✅ This works live
+    fetch("https://waitlist-backend-h04k.onrender.com/join", {  // ✅ This works live
         method: "POST",
         headers: {
             "Content-Type": "application/json"
