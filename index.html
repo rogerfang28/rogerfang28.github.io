@@ -18,17 +18,14 @@
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
-    .photo-container {
-        width: 120px;
-        height: 150px;
-        background-color: #eee;
-        border: 1px solid #ccc;
-        text-align: center;
-        line-height: 150px;
-        font-size: 12pt;
-        color: #999;
-        margin-bottom: 15px;
-    }
+      .photo-container {
+          width: 240px;
+          height: 300px;
+          background-color: #eee;
+          border: 1px solid #ccc;
+          margin-bottom: 15px;
+          overflow: hidden; /* Add this */
+      }
     .name {
         font-size: 24pt;
         font-weight: bold;
@@ -66,15 +63,14 @@
 <body>
     <div class="header">
         <div class="photo-container">
-            [Photo]
-        </div>
-        <h1 class="name">Full Name</h1>
+          <img src="profile.jpg" alt="Profile Photo" style="width: 100%; height: 100%; object-fit: cover;">        </div>
+        <h1 class="name">Roger Fang</h1>
     </div>
 
     <div class="content">
-        <div class="section-title">Academic Records</div>
+        <div class="section-title">10th Grade - Los Altos High School, CA</div>
         <div class="link-box">
-            View Unofficial High School Transcript: <a href="transcript.pdf">Academic Transcript (PDF)</a>
+            <a href="transcript.pdf">Academic Transcript (PDF)</a>
         </div>
     </div>
 </body>
