@@ -1,106 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roger Fang | Portfolio</title>
-  <meta name="description" content="Student developer portfolio featuring projects, achievements, and contact information." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        padding: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header {
+        display: block;
+        border-bottom: 2px solid #444;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .photo-container {
+        width: 120px;
+        height: 150px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 150px;
+        font-size: 12pt;
+        color: #999;
+        margin-bottom: 15px;
+    }
+    .name {
+        font-size: 24pt;
+        font-weight: bold;
+        margin: 0;
+        color: #222;
+    }
+    .title {
+        font-size: 14pt;
+        color: #666;
+        margin-top: 5px;
+    }
+    .content {
+        margin-top: 40px;
+    }
+    .section-title {
+        font-size: 12pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+    }
+    .link-box {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #007bff;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
-  <div class="page-bg" aria-hidden="true"></div>
-
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a href="#top" class="brand">RF</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#achievements">achievements</a>
-        <a href="#contact">contact</a>
-      </nav>
+    <div class="header">
+        <div class="photo-container">
+            [Photo]
+        </div>
+        <h1 class="name">Full Name</h1>
     </div>
-  </header>
 
-  <main>
-    <section class="hero reveal">
-      <div class="container hero-grid">
-        <div>
-          <p class="kicker">student developer</p>
-          <h1>hi, i'm roger fang</h1>
-          <p class="lead">i build thoughtful tools and learn by shipping real projects.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#projects">view projects</a>
-            <a class="btn btn-ghost" href="#contact">get in touch</a>
-          </div>
+    <div class="content">
+        <div class="section-title">Academic Records</div>
+        <div class="link-box">
+            View Unofficial High School Transcript: <a href="transcript.pdf">Academic Transcript (PDF)</a>
         </div>
-        <aside class="hero-card" aria-label="Quick intro">
-          <h2>right now</h2>
-          <ul>
-            <li>building debate tool project</li>
-            <li>competitive programming (usaco)</li>
-            <li>soccer + school projects</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about" class="section reveal">
-      <div class="container">
-        <h2>about</h2>
-        <p>i'm roger fang, a sophomore at los altos high school. i enjoy building coding projects, playing soccer, and improving through hands-on work. right now, i'm focused on my debate tool project, where i'm exploring ways to structure arguments clearly and encourage better reasoning online.</p>
-      </div>
-    </section>
-
-    <section id="projects" class="section reveal">
-      <div class="container">
-        <div class="section-head">
-          <h2>projects</h2>
-          <p>main project</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>debate tool project</h3>
-            <p>this project organizes debates in a tree structure so claims, responses, and evidence are easier to follow. i am adding challenge mechanics that push arguments to stay logical and well-supported, with the goal of reducing misinformation and improving discussion quality.</p>
-            <a href="https://github.com/rogerfang28/debate" aria-label="Debate Tool Project link">github repo</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="section reveal">
-      <div class="container">
-        <h2>achievements</h2>
-        <div class="chip-wrap">
-          <span class="chip">USACO Silver Division</span>
-          <span class="chip">MLS 2 Soccer</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section reveal">
-      <div class="container contact-wrap">
-        <div>
-          <h2>contact</h2>
-          <p>email me at <a href="mailto:rogerfang28@gmail.com">rogerfang28@gmail.com</a></p>
-        </div>
-        <ul class="contact-list">
-          <li>email: <a href="mailto:rogerfang28@gmail.com">rogerfang28@gmail.com</a></li>
-          <li>github: <a href="https://github.com/rogerfang28">github.com/rogerfang28</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Roger Fang</p>
     </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
